@@ -1,0 +1,201 @@
+.footer {
+    background-color: #F5F5F5;
+    padding: 4rem 0;
+    margin-top: 8rem;
+
+    &-container {
+        max-width: 786px;
+        margin: auto;
+    }
+
+    .breadcrumb {
+        display: flex;
+        gap: 0.6rem;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        .page {
+            font-weight: 700;
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    .col {
+        max-width: 33.33333%;
+    }
+
+    .contact-info {
+        padding-bottom: 4rem;
+        border-bottom: 1px solid #E0E0E0;
+        .slogan {
+            span {
+                display: block;
+                margin-top: 2.4rem;
+            }
+        }
+
+        .phone, .mail {
+            font-weight: 700;
+            .text {
+                margin-bottom: 2.4rem;
+            }
+        }
+    }
+
+    &-menu {
+        padding-top: 4rem;
+        border-bottom: 1px solid #E0E0E0;
+
+        &-header {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-weight: 600;
+            margin-bottom: 2.4rem;
+        }
+
+        &-list {
+            margin-bottom: 4rem;
+
+            &.green {
+                h3 {
+                    color: $brand-color;
+                    transition: all 0.3s ease;
+                }
+    
+                .footer-menu-link::after {
+                    background-color: $brand-color;
+                }
+    
+                .footer-menu-link:hover {
+                    color: $brand-color;
+                }
+            }
+    
+            &.yellow {
+                h3 {
+                    color: #F2B427;
+                    transition: all 0.3s ease;
+                }
+    
+                .footer-menu-link::after {
+                    background-color: #F2B427;
+                }
+    
+                .footer-menu-link:hover {
+                    color: #F2B427;
+                }
+            }
+
+            &.orange {
+                h3 {
+                    color: #F6755A;
+                    transition: all 0.3s ease;
+                }
+    
+                .footer-menu-link::after {
+                    background-color: #F6755A;
+                }
+    
+                .footer-menu-link:hover {
+                    color: #F6755A;
+                }
+            }
+
+            &.blue {
+                h3 {
+                    color: $primary-color;
+                    transition: all 0.3s ease;
+                }
+    
+                .footer-menu-link::after {
+                    background-color: $primary-color;
+                }
+    
+                .footer-menu-link:hover {
+                    color: $primary-color;
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 1.6rem;
+                margin-top: 0.8rem;
+            }
+
+        }
+
+        &-item {
+            position: relative;
+            width: fit-content;
+
+            &:hover .footer-menu-link::after{
+                width: 100%;
+            }
+        }
+        
+        &-link {
+            display: block;
+            font-weight: 700;
+            color: $text-color;
+            padding-bottom: 1.2rem;
+            margin-bottom: 0.8rem;
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                height: 5px;
+                width: 0;
+                transition: all 0.3s ease;
+            }
+        }
+
+    }
+    &-end {
+        margin-top: 4rem;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        font-weight: 600;
+
+        .policy {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.4rem;
+
+            &-item {
+                position: relative;
+            }
+
+            &-link {
+                color: $text-color;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: $brand-color;
+                }
+
+                // &:not(:last-child):after{
+                //     position: absolute;
+                //     content: "";
+                //     width: 3px;
+                //     height: 3px;
+                //     border-radius: 50%;
+                //     background-color: #082837;
+                //     right: -9px;
+                //     top: 50%;
+                //     transform: translateY(-50%);
+                // }
+            }
+
+        }
+    }
+
+}

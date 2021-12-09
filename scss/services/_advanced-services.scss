@@ -1,0 +1,82 @@
+.advanced-services {
+    &-container {
+        margin: 6rem auto;
+        width: 76%; 
+    }
+
+    &-title {
+        margin-bottom: 3.2rem;
+        margin-left: -4rem;
+    }
+
+    &-list {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+    }
+
+    &-img {
+        position: relative;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-bottom: 2.4rem;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+
+        &:hover &-mask { 
+            opacity: 0.25;
+        }
+
+        &:hover .advanced-services-action { 
+            opacity: 1;
+        }
+
+        &-mask {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $primary-color;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+    }
+
+    &-item {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    &-name {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $primary-color;
+        cursor: pointer;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow-y: hidden;
+    }
+    
+    &-price {
+        font-weight: 700;
+        margin: 1.2rem 0;
+    }
+
+    &-action {
+        @include p-center;
+        opacity: 0;
+        transition: all 0.5s ease;
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: max-content;
+        }
+    }
+}

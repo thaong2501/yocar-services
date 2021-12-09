@@ -1,0 +1,222 @@
+.exterior {
+    position: relative;
+
+    &-banner-bg {
+        position: absolute;
+        bottom: 5%;
+        z-index: -1;
+    }
+    &-container {
+        margin-top: 12rem;
+        text-align: center;
+    }
+
+    &-title {
+        &-icon{
+            width: 4.8rem;
+            height: 4.8rem;
+            border-radius: 50%;
+            background-color: $dark-blue;
+            margin: auto;
+            position: relative;
+            margin-bottom: 16px;
+
+            img {
+                color: #fff;
+                @include p-center;
+            }
+        }
+
+        &-text {
+            font-size: 3.2rem;
+            line-height: 4rem;
+            font-weight: 700;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &-heading {
+        font-size: 4.8rem;
+        line-height: 6rem;
+        font-weight: 700;
+        color: $primary-color;
+        margin-bottom: 4rem;
+    }
+
+    &-desc {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        width: 45%;
+        font-weight: 600;
+        margin: auto;
+        margin-bottom: 6rem;
+    }
+
+    &-item {
+
+        &-heading {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: end;
+            width: 84%;
+            margin: auto;
+            margin-bottom: 3.2rem;
+        }
+        
+        &-name {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2rem;
+            margin-top: 6rem;
+
+            &-icon{
+                position: relative;
+                width: 3.6rem;
+                height: 3.6rem;
+                border-radius: 0.8rem;
+                background-color: $primary-color;
+                margin-right: 0.8rem;
+
+                img {
+                    @include p-center;
+                }
+            }
+
+            &-text {
+                font-size: 2rem;
+                line-height: 2.4rem;
+                font-weight: 700;
+                color: $primary-color;
+            }
+        }
+
+        &-slogan {
+            font-weight: 700;
+            line-height: 4rem;
+            font-size: 3.2rem;
+        }
+
+        &-detail {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 8rem;
+
+            &-col {
+                position: relative;
+                border-radius: 0.8rem;
+                overflow: hidden;
+
+                &.b-2 {
+                    border-radius: 2rem;
+                }
+            }
+
+            &-info {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+
+                &-wrapper {
+                    padding: 4rem;
+                    display: flex;
+                    align-items: end;
+                    justify-content: space-between;
+                }
+
+                &-text {
+                    font-size: 3.2rem;
+                    line-height: 4rem;
+                    font-weight: 700;
+                    color: #fff;
+                }
+
+                &-price {
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                    font-weight: 700;
+                    color: #fff;
+                    margin-bottom: 0.8rem;
+                }
+            }
+        }
+    }
+
+    &-banner {
+        position: relative;
+        border-radius: 2rem;
+        overflow: hidden;
+
+        
+        &-img {
+            background-image: url("../images/exterior-banner.png");
+            background-color: #cccccc;
+            height: 468px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        &-content {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            @include p-center;
+
+            &-wrapper {
+                margin: 6rem 0;
+            }
+        }
+
+        &-heading {
+            font-size: 3.2rem;
+            line-height: 4rem;
+            font-weight: 700;
+            color: #fff;
+            width: 30%;
+            margin: auto;
+            margin-bottom: 6rem;
+        }
+
+        &-list {
+            width: 50%;
+            margin: auto;
+            
+            &-row {
+                display: flex;
+                gap: 7.4rem;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1.6rem;
+            }
+
+            &-item {
+                display: flex;
+                gap: 1.6rem;
+                align-items: center;
+
+                &-icon {
+                    width: 4rem;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &-text {
+                    color: #fff;
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                    font-weight: 500;
+                    text-align: start;
+                }
+            }
+        }
+
+        &-action {
+            margin-top: 4rem;
+        }
+    }
+}

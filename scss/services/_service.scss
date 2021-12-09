@@ -1,0 +1,51 @@
+.service {
+    margin-top: 76px;
+    position: relative;
+
+    &-arrow-icon {
+        display: none
+    }
+    
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-icon {
+            position: relative;
+            height: 4rem;
+            text-align: center;
+
+            span {
+                font-size: 4rem;
+                color: #9E9E9E;
+                transition: all 0.3s ease;
+            }
+            
+        }
+
+        &-text {
+            color: $text-color;
+            text-align: center;
+        }
+    }
+
+    &-item {
+        width: 10.8%;
+    }
+
+    &-link {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 2.8rem 2rem;
+
+        &:hover .service-list-icon span {
+            color: $primary-color;
+        }
+    }
+
+    &-icon {
+        text-align: center;
+    }
+}

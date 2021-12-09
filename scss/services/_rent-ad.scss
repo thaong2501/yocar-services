@@ -1,0 +1,32 @@
+.rent-ad {
+    background-color: #F2F8FC;
+    height: 436px;
+    &-container {
+        margin-top: 8rem;
+        display: flex;
+    }
+
+    &-img {
+        position: absolute;
+        right: 0;
+    }
+
+    &-info {
+        width: 50%;
+
+        &-heading {
+            font-size: 4rem;
+            line-height: 5.2rem;
+            font-weight: 700;
+            margin-bottom: 4rem;
+            margin-top: 8rem;
+        }
+
+        &-desc {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            width: 80%;
+            font-weight: 500;
+        }
+    }
+}

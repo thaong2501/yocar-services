@@ -1,0 +1,494 @@
+// mobile and tablet
+@media (max-width: 1024px) {
+    .advanced-services-container {
+        width: 100%;
+    }
+    .advanced-services-list {
+        gap: 1rem;
+    }
+    .advanced-services-title {
+        margin-left: 0;
+    }
+}
+
+// tablet
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section-content-heading {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    .banner .support-content {
+        top: 45%;
+        left: 5%;
+    }
+
+    .banner .ceramic-content {
+        margin-left: 3rem;
+    }
+    .banner .ceramic-desc {
+        font-size: 3.6rem;
+    }
+
+    .service-list {
+        justify-content: space-evenly;
+    }
+
+    .exterior-item-heading {
+        width: 100%;
+    }
+    .exterior-item-detail-info-wrapper {
+        padding: 2rem;
+    }
+    .exterior-item-detail-info-text {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+    }
+    .exterior-banner-heading {
+        width: 100%;
+    }
+    .exterior-banner-content-wrapper {
+        margin: 3rem 0;
+    }
+
+    .rent-ad-container {
+        padding: 4rem 0;
+    }
+    .rent-ad-img {
+        width: 48%;
+    }
+    .rent-ad-info-heading {
+        margin-top: 0;
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+    }
+}
+
+// mobile
+@media (max-width: 768px) {
+    .btn {
+        border: 1px solid #E0E0E0;
+    }
+    .btn.btn-big.btn--primary {
+        border: none;
+    }
+    .container {
+        padding: 0 2rem;
+    }
+
+    .header-container {
+        height: 60px;
+    }
+    .menu {
+        display: none;
+    }
+    .header-logo {
+        flex: 1;
+    }
+    .header-logo img {
+        margin: auto;
+    }
+    .menu-mobile span{
+        display: inline-block;
+    }
+    .section-desc {
+        width: 95%;
+    }
+    .section-content-detail {
+        color: $dark-gray;
+        font-weight: 700;
+    }
+    .section-content-heading {
+        color: $primary-color;
+        margin-bottom: 1.6rem;
+    }
+
+    .service-arrow-icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4rem;
+        height: 4rem;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: 1;
+
+        span {
+            @include p-center;
+        }
+    }
+
+    .service {
+        margin-top: 60px;
+
+        .container {
+            background-color: #f5f5f5;
+            padding: 0;
+        }
+    }
+    .service-list {
+        max-width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .service-item {
+        flex-shrink: 0;
+        width: 105px;
+        scroll-snap-align: start;
+    }
+    .service-item:first-child {
+        margin-left: 45rem;
+    }
+    .service-link {
+        padding: 2rem 1rem;
+    }
+
+    .banner.first {
+        background-image: url("../images/banner1-m.png");
+    }
+
+    .banner-info-heading {
+        line-height: 5.4rem;
+    }
+
+    .banner-info {
+        width: 90%;
+        @include p-center;
+    }
+
+    .banner-info-detail p{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .wash-car-content {
+        flex-wrap: wrap;
+    }
+
+    .wash-car-content-right-info,
+    .wash-car-content-left-info {
+        position: initial;
+        padding: 2.4rem 0;
+    }
+    .wash-car-content-left-info-text {
+        margin-left: 0;
+    }
+    
+    .wash-car-content-right-info-text {
+        margin: 0;
+    }
+
+    .wash-car-content-right-info-text .section-content-detail {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .wash-car-content-right-info {
+        justify-content: unset;
+    }
+
+    .wash-car-content-right-info button {
+        color: $text-color;
+        border: 1px solid #E0E0E0 !important;
+        margin-left: 0;
+    }
+
+    .section.interior {
+        margin-top: 0;
+    }
+
+    .interior-content-wrapper {
+        padding: 0 2rem;
+    }
+
+    .interior-content .section-content-detail,
+    .interior-content .section-content-heading {
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .interior-content .row .col-left-info-container {
+        margin: 2.4rem;
+    }
+    .interior-content .row .col-right-info {
+        padding: 2.4rem;
+    }
+
+    .interior-content-background {
+        background-image: url("../images/interior-bg-m.png");
+        top: 25%;
+    }
+
+    .interior-content .row .col {
+        height: auto;
+    }
+
+    .interior-content .row .interior-content-item3 {
+        background-image: url("../images/interior-img3-m.png");
+        height: 652px;
+        border-radius: 0;
+        margin: 4rem -2rem;
+    }
+
+    .interior-content .row .interior-content-item3 .col-info {
+        width: 100%;
+        bottom: 0;
+        top: initial;
+        transform: translateY(0);
+    }
+
+    .interior-content .row .interior-content-item3 .col-info-container {
+        margin: 2.4rem 2rem 4rem;
+    }
+    .interior-content .row .col-info-container {
+        margin: 2.4rem;
+    }
+
+    .rent-ad {
+        height: fit-content;
+        padding-bottom: 4rem;
+    }
+
+    .rent-ad-container {
+        flex-wrap: wrap;
+    }
+
+    .rent-ad-img {
+        position: inherit;
+        order: -1;
+        margin: 0 -2rem;
+    }
+
+    .rent-ad-info {
+        width: 100%;
+    }
+
+    .rent-ad-info-heading {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        margin-top: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .exterior-title-text {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+
+    .exterior-heading {
+        font-size: 4rem;
+        line-height: 5.2rem;
+    }
+
+    .exterior-desc {
+        width: 80%;
+        font-weight: 500;
+    }
+
+    .exterior-item-heading {
+        margin-left: 0;
+    }
+
+    .exterior-item-slogan {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-weight: 600;
+        text-align: start;
+        margin-bottom: 2.4rem;
+    }
+
+    .exterior-item-detail-info {
+        position: initial;
+    }
+
+    .exterior-item-detail-info-wrapper {
+        flex-wrap: wrap;
+        padding: 2.4rem 0;
+        
+    }
+
+    .exterior-item-detail-info-text {
+        color: $primary-color;
+        margin-bottom: 1.6rem;
+    }
+
+    .exterior-item-detail {
+        margin-bottom: 0;
+    }
+
+    .exterior-item-detail-info-price {
+        color: $text-color;
+    }
+
+    .exterior-banner {
+        border-radius: 0;
+        margin: 0 -2rem;
+    }
+    .exterior-banner-img {
+        background-image: url("../images/exterior-banner-m.png");
+        height: 770px;
+    }
+    .exterior-banner-heading {
+        width: 100%;
+    }
+
+    .exterior-banner-list-row {
+        flex-wrap: wrap;
+        gap: 1.6rem;
+    }
+
+    .exterior-banner-bg {
+        display: none;
+    }
+
+    .support-img {
+        display: none;
+    }
+
+    .banner .support-container {
+        background-color: #F2F8FC;
+        padding: 6rem 0;
+    }
+
+    .support-content {
+        position: initial;
+    }
+
+    .banner .support-content {
+        position: initial;
+        transform: translateY(0);
+    }
+    .banner .support-action {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .support-info {
+        text-align: center;
+    }
+
+    .banner .support-info-heading {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+
+    .banner .ceramic-img {
+        background-image: url("../images/banner-ceramic-m.png");
+        height: 792px;
+    }
+
+    .banner .ceramic-container {
+        margin: 2rem 0;
+        border-radius: 2rem;
+        border: 1px solid #E1E8ED;
+    }
+
+    .banner .ceramic-content {
+        top: 30%;
+        margin-left: 2rem;
+    }
+
+    .advanced-services-list {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .advanced-services-item {
+        max-width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    .advanced-services-img {
+        position: initial;
+    }
+
+    .advanced-services-action {
+        opacity: 1;
+        bottom: -8rem;
+        left: 9rem;
+        top: auto;
+    }
+
+    .advanced-services-item {
+        position: relative;
+    }
+
+    .banner.find-location .banner-img {
+        background-image: url("../images/banner-find-m.png");
+        height: 360px;
+        border-radius: 2rem;
+        border: 1px solid #E1E8ED;
+    }
+
+    .banner-info.find-location-info .banner-info-heading {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+
+    .banner.find-location .banner-info.find-location-info {
+        width: fit-content;
+        left: 30%;
+        top: 30%;
+    }
+
+    .price-sheet-content.desktop {
+        display: none
+    }
+
+    .price-sheet-content.mobile {
+        display: block;
+    }
+
+    .footer-container {
+        padding: 0 2rem;
+    }
+
+    .footer .contact-info {
+        flex-direction: column;
+    }
+
+    .footer .contact-info .col {
+        max-width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        .text {
+            margin-bottom: 0;
+        }
+    }
+
+    .col.slogan {
+        text-align: center;
+
+        span {
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+
+        img {
+            margin: auto;
+        }
+    }
+
+    .footer .col {
+        max-width: 45%;
+        padding: 0 0.5rem;
+    }
+
+    .footer-menu .col:last-child {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        gap: 2rem;
+        ul {
+            width: 50%;
+        }
+    }
+
+    .copyright {
+        margin-bottom: 2.4rem;
+    }
+}

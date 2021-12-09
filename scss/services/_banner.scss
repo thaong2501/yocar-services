@@ -1,0 +1,130 @@
+.banner {
+    position: relative;
+    &.first {
+        background-image: url("../images/banner.png");
+        background-color: #cccccc;
+        height: 524px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    &-info {
+        @include p-center;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+
+        &-heading {
+            font-size: 4.8rem;
+            line-height: 6rem;
+            margin-bottom: 2.8rem;
+        }
+
+        &-detail {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+
+        &.find-location-info {
+            width: auto;
+            text-align: start;
+            margin-left: 6rem;
+            
+            .banner-info-heading {
+                color: $text-color;
+            }
+        }
+    }
+
+    .support {
+        &-container {
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        &-content {
+            position: absolute;
+            top: 50%;
+            left: 16%;
+            transform: translateY(-50%);
+        }
+
+        &-info {
+            &-heading {
+                font-size: 4rem;
+                line-height: 5.2rem;
+                color: $dark-blue;
+                margin-bottom: 2.4rem;
+            }
+
+            &-desc {
+                font-size: 2rem;
+                line-height: 2.4rem;
+                color: $dark-blue;
+                margin-bottom: 3.2rem;
+            }
+        }
+
+        &-action {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+
+    .ceramic {
+        &-container {
+            position: relative;
+            margin: 4rem 0;
+        }
+
+        &-img {
+            border-radius: 2rem;
+            overflow: hidden;
+            background-image: url("../images/banner-ceramic.png");
+            background-color: #cccccc;
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        &-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 6rem;
+
+            .section-heading {
+                justify-content: start;
+            }
+    
+        }
+
+        &-desc {
+            font-size: 4rem;
+            line-height: 5.2rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &.find-location {
+        .banner-img {
+            background-image: url("../images/banner-find.png");
+            background-color: #cccccc;
+            height: 304px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .banner-info.find-location-info {
+            left: 20%;
+            
+        }
+    }
+}
+

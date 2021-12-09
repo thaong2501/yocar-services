@@ -1,0 +1,126 @@
+.interior {
+    &-content {
+        &-wrapper {
+            position: relative;
+        }
+
+        &-background {
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url("../images/interior-bg.png");
+            background-color: #cccccc;
+            height: 444px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            
+            .col {
+                position: relative;
+                border-radius: 2rem;
+                overflow: hidden;
+                width: 484px;
+                height: 440px;
+                img {
+                    width: 100%;
+                }
+
+                &-info {
+                    position: absolute;
+                    bottom: 0;
+
+                    &-container {
+                        margin: 4.8rem;
+
+                        .section-content-heading {
+                            margin-bottom: 1.6rem;
+                        }
+                    }
+                }
+            }
+
+            .col-right {
+                background-color: $primary-color;
+                height: 440px;
+                border-radius: 2rem;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-image: url(../images/interior2-m.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+
+                &-img {
+                    order: 1;
+                }
+
+                &-info {
+                    padding: 4.8rem;
+
+                    .section-content-heading {
+                        margin-bottom: 1.6rem;
+                    }
+                }
+            }
+
+            .interior-content-item3 {
+                position: relative;
+                margin-top: 2rem;
+                border-radius: 2rem;
+                overflow: hidden;
+                background-image: url("../images/interior-img3.png");
+                background-color: #cccccc;
+                height: 408;
+                width: 1189px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                .col-info {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 45%;
+                    height: fit-content;
+
+                    &-container {
+                        margin: 4.8rem;
+                    }
+
+                    .section-content-heading {
+                        margin-bottom: 2.4rem;
+                    }
+
+                    &-text-item {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1.6rem;
+
+                        &-icon {
+                            margin-right: 1.6rem;
+                            width: 2.4rem;
+                            height: 2.4rem;
+                        }
+                    }
+
+                    button {
+                        margin-top: 2.4rem;
+                    }
+                }
+
+            }
+        }
+    }
+}

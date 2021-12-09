@@ -1,0 +1,253 @@
+.price-sheet {
+
+    &-title {
+        text-align: center;
+        padding: 4rem 0 6rem;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FC 100%);
+        margin-bottom: 6rem;
+
+        &-icon {
+            border-radius: 0.8rem;
+            background-color: $primary-color;
+        }
+
+        &-text {
+            color: $primary-color;
+            margin-bottom: 0;
+        }
+    }
+
+    &-content {
+        &.mobile {
+            display: none;
+
+            .service-table-row {
+                flex-direction: column;
+                align-items: start;
+
+                &-wrapper {
+                    border-bottom: none;
+                }
+
+                .service-table-col {
+                    flex-direction: column;
+                    align-items: start;
+                    width: 100%;
+
+                    .col-name {
+                        margin-bottom: 0.8rem;
+                    }
+
+                    .col-time span {
+                        font-size: 1.4rem;
+                        line-height: 1.6rem;
+                        margin-bottom: 1.6rem;
+                    }
+
+                    &.price-estimate {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        font-weight: 700;
+                        color: $dark-blue;
+                        padding-bottom: 1.6rem;
+                        margin-bottom: 0.8rem;
+                        border-bottom: 1px solid #E0E0E0;
+                        width: 100%;
+                    }
+
+                    .service-table-col-child {
+                        width: 100%;
+                        .child-item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 0.8rem 0;
+
+                        }
+
+                        .child-item-col-left {
+                            display: flex;
+
+                            img {
+                                margin-right: 0.8rem;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &-header {
+            border-bottom: 1px solid #E7E7E7;
+            margin-bottom: 2.8rem;
+
+            &-wrapper {
+                display: flex;
+                padding: 1.4rem 0;
+
+                .filter {
+                    flex-basis: 50%;
+                    .btn {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.8rem;
+                        padding: 1rem 2rem;
+                        border: 1px solid #E0E0E0;
+                    }
+                }
+
+                .car-type {
+                    display: flex;
+                    flex-basis: 50%;
+                    align-items: center;
+                    margin-bottom: 0.4rem;
+
+                    &-item {
+                        flex-basis: 25%;
+                    }
+
+                    &-name {
+                        font-weight: 700;
+                        color: $dark-blue;
+                    }
+                }
+            }
+        }
+
+        &-info {
+            &-item {
+                border-radius: 4rem;
+                padding: 2rem;
+                margin-bottom: 2rem;
+
+                &:nth-child(even) {
+                    background-color: #F2F8FC
+                }
+                .service-label {
+                    display: flex;
+                    align-items: center;
+                    background-color: #BDE7FF;
+                    width: fit-content;
+                    padding: 1.2rem;
+                    border-radius: 2.8rem;
+                    margin-bottom: 1.6rem;
+
+                    &-text {
+                        font-size: 2rem;
+                        line-height: 2.4rem;
+                        font-weight: 700;
+                        color: $primary-color;
+                        margin-right: 0.8rem;
+                    }
+
+                    &-icon {
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        border-radius: 50%;
+                        background-color: $primary-color;
+                        position: relative;
+                        padding: 0.3rem;
+
+                        span {
+                            color: #fff;
+                            @include p-center;
+                        }
+                    }
+                }
+
+                .service-table {
+                    &-row {
+                        position: relative;
+                        left: 0;
+                        top: 0;
+                        display: flex;
+                        align-items: center;
+                        padding: 1.6rem 0 1.6rem 1.6rem;
+                        margin: 0.8rem 0;
+                        border-radius: 2.8rem;
+                        background-color: transparent;
+                        transition: all 0.6s ease;
+                        &:hover {
+                            background-color: #d8dce194;
+                            left: 0.5px;
+                            top: 0.5px;
+                        }
+                        
+                        
+                        &-wrapper {
+                            margin: 0.8rem 0;
+                            &:not(:last-child) {
+                                border-bottom: 0.5px solid #E0E0E0;
+                            }
+
+                            &.mobile {
+                                border-bottom: none;
+                            }
+                            
+                        }
+                    }
+
+                    &-col {
+                        flex-basis: 50%;
+                        display: flex;
+                        align-items: center;
+
+                        &.col-left {
+                            .col-time {
+                                .time {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.8rem;
+                                    font-weight: 700;
+                                    color: $dark-blue;
+                                }
+                            }
+                            .col-name {
+                                flex-basis: 70%;
+
+                                span {
+                                    font-size: 2rem;
+                                    line-height: 2.4rem;
+                                    font-weight: 700;
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+
+                        &.col-right {
+                            .col-price {
+                                flex-basis: 25%;
+                                position: relative;
+                                span {
+                                    font-weight: 700;
+                                    color: $dark-blue;
+                                }
+
+                                &.full {
+                                    flex-basis: 100%;
+                                    text-align: center;
+                                }
+
+                                &:not(:last-child):after {
+                                    content: "";
+                                    position: absolute;
+                                    right: 18%;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    height: 10px;
+                                    width: 0.5px;
+                                    background: #0F2A65;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+

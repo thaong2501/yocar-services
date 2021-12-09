@@ -1,0 +1,156 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(8, 40, 55, 0.75);
+    backdrop-filter: blur(20px);
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 76px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 1.4rem 0;
+
+    &-mobile {
+        span {
+            color: #fff;
+            display: none;
+        }
+    }
+
+    &-item {
+        position: relative;
+        
+        &:nth-child(1) .menu-link-icon {
+            color: $brand-color;
+            transition: all 0.3s ease;
+        }
+        &:nth-child(1):hover a {
+            color: $brand-color;
+        }
+        &:nth-child(1) a::after {
+            background-color: $brand-color;
+        }
+        &:nth-child(1).active .menu-link-text {
+            color: $brand-color;
+        }
+
+        &:nth-child(2) .menu-link-icon {
+            color: $yellow;
+            transition: all 0.3s ease;
+        }
+        &:nth-child(2):hover a {
+            color: $yellow;
+        }
+        &:nth-child(2) a::after {
+            background-color: $yellow;
+        }
+        &:nth-child(2).active .menu-link-text {
+            color: $yellow;
+        }
+
+        &:nth-child(3) .menu-link-icon {
+            color: $orange;
+            transition: all 0.3s ease;
+        }
+        &:nth-child(3):hover a {
+            color: $orange;
+        }
+        &:nth-child(3) a::after {
+            background-color: $orange;
+        }
+        &:nth-child(3).active .menu-link-text {
+            color: $orange;
+        }
+
+        &:nth-child(4) .menu-link-icon {
+            color: $blue;
+            transition: all 0.3s ease;
+        }
+        &:nth-child(4):hover a {
+            color: $blue;
+        }
+        &:nth-child(4) a::after {
+            background-color: $blue;
+        }
+        &:nth-child(4).active .menu-link-text {
+            color: $blue;
+        }
+
+
+        &.active a::after {
+            width: 100%;
+        }
+        &.active .menu-link-icon {
+            color: #fff;
+        }
+        &:hover a::after {
+            width: 100%;
+        }
+        &:hover .menu-link-icon{
+            color: #fff;
+        }
+    }
+
+    &-link {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        transition: all 0.3s ease;
+        .menu-link-icon {
+            font-size: 2rem;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 0;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &-icon {
+        position: relative;
+        top: 0.4rem;
+        display: inline-block;
+    }
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    &-icon {
+        cursor: pointer;
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    &-user {
+        width: 3rem;
+        height: 3rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}
