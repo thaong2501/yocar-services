@@ -132,6 +132,9 @@
         max-width: 100%;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     .service-item {
         flex-shrink: 0;
@@ -298,6 +301,10 @@
         font-weight: 600;
         text-align: start;
         margin-bottom: 2.4rem;
+    }
+
+    .exterior-item-detail {
+        flex-wrap: wrap;
     }
 
     .exterior-item-detail-info {

@@ -730,7 +730,6 @@ img {
 }
 .exterior-item-detail {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 8rem;
 }
@@ -1405,6 +1404,9 @@ img {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }
+  .service-list::-webkit-scrollbar {
+    display: none;
+  }
 
   .service-item {
     flex-shrink: 0;
@@ -1579,6 +1581,10 @@ img {
     font-weight: 600;
     text-align: start;
     margin-bottom: 2.4rem;
+  }
+
+  .exterior-item-detail {
+    flex-wrap: wrap;
   }
 
   .exterior-item-detail-info {
